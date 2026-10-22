@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rohit Kumar | B.Tech CSIT Student &amp; Aspiring Software Developer</title>
+<meta name="description" content="Portfolio of Rohit Kumar, B.Tech CSIT student at GL Bajaj Institute of Technology and Management, seeking software development internships and placements.">
+<meta property="og:title" content="Rohit Kumar | Aspiring Software Developer">
+<meta property="og:description" content="Projects, skills and education of Rohit Kumar, B.Tech CSIT student.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a0614">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07050f;--bg2:#0e0a1f;--text:#ece9f8;--mute:#a59fc4;--card:rgba(255,255,255,.055);--bd:rgba(255,255,255,.12);--p:#8b5cf6;--b:#3b82f6;--grad:linear-gradient(120deg,#8b5cf6,#3b82f6);--glow:0 0 28px rgba(139,92,246,.45);--sh:0 10px 40px rgba(0,0,0,.45);--navbg:rgba(7,5,15,.72)}
+[data-theme=light]{--bg:#f6f4ff;--bg2:#ebe7fb;--text:#1b1533;--mute:#58507a;--card:rgba(255,255,255,.75);--bd:rgba(80,60,160,.16);--p:#6d3fe0;--b:#2563eb;--grad:linear-gradient(120deg,#6d3fe0,#2563eb);--glow:0 0 22px rgba(109,63,224,.25);--sh:0 10px 30px rgba(60,40,140,.12);--navbg:rgba(246,244,255,.8)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:16px/1.65 Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background .3s,color .3s}
+h1,h2,h3,.logo{font-family:Sora,sans-serif;line-height:1.2}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--b);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--p);color:#fff;padding:8px 14px;border-radius:8px;z-index:200}.skip:focus{left:8px}
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad);z-index:150}
+#loader{position:fixed;inset:0;background:var(--bg);display:grid;place-items:center;z-index:300;transition:opacity .5s}
+#loader i{width:46px;height:46px;border-radius:50%;border:4px solid var(--bd);border-top-color:var(--p);animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+canvas#bg{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.wrap{max-width:1120px;margin:auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:100;background:var(--navbg);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:14px}
+.logo{font-weight:800;font-size:1.25rem;letter-spacing:.5px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.links{display:flex;gap:4px;align-items:center;list-style:none;padding:0}
+.links a{padding:6px 10px;border-radius:8px;font-size:.88rem;color:var(--mute);transition:.2s}
+.links a:hover,.links a.on{color:var(--text);background:var(--card)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:12px;font:600 .92rem Sora,sans-serif;border:1px solid var(--bd);background:var(--card);color:var(--text);cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--grad);border:0;color:#fff;box-shadow:var(--glow)}.btn.pri:hover{box-shadow:0 0 38px rgba(139,92,246,.7)}
+.btn.sm{padding:7px 14px;font-size:.82rem}
+.btn[aria-disabled=true]{opacity:.5;cursor:not-allowed;pointer-events:none}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.iconbtn{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--bd);background:var(--card);cursor:pointer;color:var(--text);transition:.2s}
+.iconbtn:hover{box-shadow:var(--glow);transform:translateY(-2px)}
+#burger{display:none}
+section{padding:90px 0}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:12px}
+h2::after{content:"";display:block;width:72px;height:4px;border-radius:99px;background:var(--grad);margin-top:12px;box-shadow:0 0 18px rgba(139,92,246,.65)}
+.lead{color:var(--mute);max-width:62ch;margin-bottom:34px}
+.glass{background:var(--card);border:1px solid var(--bd);border-radius:22px;padding:26px;backdrop-filter:blur(16px);box-shadow:var(--sh);transition:border-color .3s,box-shadow .3s,transform .3s}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.hover:hover{transform:translateY(-8px);border-color:var(--p);box-shadow:0 18px 50px rgba(139,92,246,.28)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.reveal.in{opacity:1;transform:none}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:99px;font-size:.8rem;font-weight:600;color:var(--text);background:var(--card);border:1px solid var(--bd);backdrop-filter:blur(10px)}
+.badge::before{content:"";width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 10px #22c55e}
+#home{min-height:92vh;display:flex;align-items:center;padding:60px 0}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,6vw,4rem);font-weight:800}
+.hero h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.typed{font:600 clamp(1rem,2.4vw,1.3rem) Sora;color:var(--b);min-height:1.8em;margin:14px 0}
+.typed::after{content:"|";animation:blink 1s steps(1) infinite;margin-left:2px}
+@keyframes blink{50%{opacity:0}}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.photo{width:min(320px,72vw);aspect-ratio:1;border-radius:32px;margin:auto;position:relative;display:grid;place-items:center;overflow:hidden;background:var(--grad);box-shadow:0 0 0 10px var(--card),0 25px 70px rgba(139,92,246,.45);animation:float 6s ease-in-out infinite}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.photo:hover img{transform:scale(1.06)}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(7,5,15,.55));pointer-events:none}
+.photo .initials{font:800 5rem Sora,sans-serif;color:#fff;letter-spacing:2px}
+@keyframes float{50%{transform:translateY(-12px)}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{padding:5px 12px;border-radius:99px;font-size:.83rem;border:1px solid var(--bd);background:var(--bg2)}
+.note{font-size:.82rem;color:var(--mute);margin-top:18px}
+.thumb{height:150px;border-radius:14px;margin-bottom:16px;display:grid;place-items:center;font:800 2.6rem Sora;color:#fff}
+.card h3{margin-bottom:6px}.card p{color:var(--mute);font-size:.92rem;margin-bottom:14px}
+.tl{border-left:2px solid var(--bd);padding-left:26px;margin-left:8px}
+.tl .item{position:relative;margin-bottom:22px}
+.tl .item::before{content:"";position:absolute;left:-35px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--grad);box-shadow:var(--glow)}
+.empty{border:2px dashed var(--bd);border-radius:18px;padding:30px;text-align:center;color:var(--mute)}
+.ph{color:var(--b);font-style:italic}
+.cert-img{width:100%;height:190px;object-fit:cover;object-position:top center;border-radius:14px;border:1px solid var(--bd);margin-bottom:14px;background:var(--bg2);transition:transform .35s ease,box-shadow .35s ease}
+.glass:hover .cert-img{transform:scale(1.02);box-shadow:0 12px 35px rgba(139,92,246,.28)}
+.cert-link{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:.85rem;color:var(--b)}
+dialog{border:1px solid var(--bd);border-radius:20px;background:var(--bg2);color:var(--text);max-width:600px;width:92%;padding:28px}
+dialog::backdrop{background:rgba(0,0,0,.65);backdrop-filter:blur(4px)}
+dialog h4{margin:16px 0 4px;font:600 1rem Sora}dialog ul{padding-left:20px;color:var(--mute)}
+form{display:grid;gap:14px}
+label{font-size:.88rem;font-weight:500}
+input,textarea{width:100%;margin-top:5px;padding:12px 14px;border-radius:12px;border:1px solid var(--bd);background:var(--bg2);color:var(--text);font:inherit}
+input[aria-invalid=true],textarea[aria-invalid=true]{border-color:#f43f5e}
+.err{color:#f43f5e;font-size:.8rem;min-height:1em;display:block}
+#status{padding:12px 16px;border-radius:12px;display:none;font-size:.92rem}
+#status.ok{display:block;background:rgba(34,197,94,.15);color:#22c55e}#status.bad{display:block;background:rgba(244,63,94,.15);color:#f43f5e}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+iframe{width:100%;height:520px;border:1px solid var(--bd);border-radius:14px;margin-top:18px;background:#fff}
+footer{border-top:1px solid var(--bd);padding:40px 0;text-align:center;color:var(--mute)}
+footer ul{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;list-style:none;padding:0;margin:16px 0}
+footer .row{justify-content:center}
+#top{position:fixed;right:20px;bottom:20px;opacity:0;pointer-events:none;transition:.3s;z-index:90;background:var(--grad);color:#fff;border:0}
+#top.show{opacity:1;pointer-events:auto}
+.float{position:fixed;left:16px;bottom:20px;display:flex;flex-direction:column;gap:10px;z-index:90}
+@media(max-width:900px){
+ #burger{display:grid}
+ .links{position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--bg2);padding:14px;border-bottom:1px solid var(--bd);display:none}
+ .links.open{display:flex}
+ .hero,.two{grid-template-columns:1fr}.photo{order:-1;width:220px}.photo .initials{font-size:3.4rem}
+ .float{display:none}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="prog"></div><div id="loader" aria-hidden="true"><i></i></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="gh" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.7 16 2.5a13.4 13.4 0 0 0-7 0C6.3.7 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.3 6.5 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/></symbol>
+<symbol id="in" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></symbol>
+<symbol id="ml" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+<symbol id="code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+<symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+<symbol id="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></symbol>
+<symbol id="menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+<symbol id="dl" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+<symbol id="up" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></symbol>
+</svg>
+
+<nav aria-label="Main">
+<div class="wrap">
+ <a href="#home" class="logo">ROHIT.DEV</a>
+ <ul class="links" id="links"></ul>
+ <div style="display:flex;gap:10px;align-items:center">
+  <a class="btn pri sm" id="navResume" download>Resume</a>
+  <button class="iconbtn" id="theme" aria-label="Toggle light or dark theme"><svg class="ic"><use href="#sun"/></svg></button>
+  <button class="iconbtn" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><svg class="ic"><use href="#menu"/></svg></button>
+ </div>
+</div>
+</nav>
+
+<main id="main">
+<section id="home"><div class="wrap hero">
+ <div>
+  <span class="badge">Open to Internships &amp; Placements</span>
+  <p style="color:var(--mute);margin-top:14px">Welcome to my portfolio</p>
+  <h1>Hi, I'm <span>Rohit Kumar</span></h1>
+  <div class="typed" id="typed" aria-live="off"></div>
+  <p id="heroIntro" style="color:var(--mute);max-width:54ch"></p>
+  <div class="row">
+   <a class="btn pri" href="#projects">View My Projects</a>
+   <a class="btn" id="heroResume" download><svg class="ic"><use href="#dl"/></svg>Download Resume</a>
+   <a class="btn" href="#contact">Contact Me</a>
+  </div>
+  <div class="row" id="heroSocial"></div>
+ </div>
+ <div class="photo" id="photo" aria-label="Rohit Kumar profile photo">
+  <span class="initials">RK</span>
+ </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+ <h2 class="reveal">About Me</h2>
+ <div class="two">
+  <div class="reveal"><p id="aboutText" class="lead" style="max-width:none"></p><p class="lead" id="objective" style="max-width:none"></p></div>
+  <div class="glass reveal"><h3>Strengths</h3><div class="chips" id="strengths"></div><h3 style="margin-top:22px">Interests</h3><div class="chips" id="interests"></div></div>
+ </div>
+ <div class="grid" id="stats" style="margin-top:26px"></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+ <h2 class="reveal">Technical Skills</h2>
+ <p class="lead reveal">Technologies I am learning and working with.</p>
+ <div class="grid" id="skillGrid"></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <h2 class="reveal">Projects</h2>
+ <p class="lead reveal">A selection of projects I have built while learning software development.</p>
+ <div class="grid" id="projGrid"></div>
+</div></section>
+<dialog id="dlg" aria-labelledby="dTitle"><div id="dBody"></div><div class="row"><button class="btn pri" id="dClose">Close</button></div></dialog>
+
+<section id="experience"><div class="wrap">
+ <h2 class="reveal">Experience &amp; Internships</h2>
+ <div id="expList" style="margin-top:28px"></div>
+</div></section>
+
+<section id="education"><div class="wrap">
+ <h2 class="reveal">Education</h2>
+ <div class="tl" id="eduList" style="margin-top:28px"></div>
+</div></section>
+
+<section id="achievements"><div class="wrap">
+ <h2 class="reveal">Certifications &amp; Achievements</h2>
+ <p class="lead reveal">My certifications, courses, hackathons and competition achievements.</p>
+ <div class="grid" id="achGrid"></div>
+</div></section>
+
+<section id="profiles"><div class="wrap">
+ <h2 class="reveal">Coding Profiles</h2>
+ <p class="lead reveal">My professional and problem-solving profiles.</p>
+ <div class="grid" id="profGrid"></div>
+</div></section>
+
+<section id="resume"><div class="wrap">
+ <h2 class="reveal">Resume</h2>
+ <div class="row"><a class="btn pri" id="resDl" download><svg class="ic"><use href="#dl"/></svg>Download PDF</a><button class="btn" id="resPrev">Preview Resume</button></div>
+ <p class="note" id="resNote"></p>
+ <div id="resBox"></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <h2 class="reveal">Contact</h2>
+ <div class="two" style="margin-top:28px">
+  <div class="reveal"><p class="lead">Open to internships, placements and collaboration. Send a message and I will reply by email.</p><div class="row" id="contactLinks" style="flex-direction:column;align-items:flex-start"></div></div>
+  <form class="glass" id="form" novalidate>
+   <label>Name<input id="fn" autocomplete="name" required><span class="err"></span></label>
+   <label>Email<input id="fe" type="email" autocomplete="email" required><span class="err"></span></label>
+   <label>Subject<input id="fs" required><span class="err"></span></label>
+   <label>Message<textarea id="fm" rows="5" required></textarea><span class="err"></span></label>
+   <button class="btn pri" type="submit">Send Message</button>
+   <div id="status" role="status"></div>
+  </form>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <div class="logo" style="font-size:1.4rem">ROHIT.DEV</div>
+ <p>Building reliable software, one problem at a time.</p>
+ <ul id="footLinks"></ul>
+ <div class="row" id="footSocial"></div>
+ <p style="margin-top:18px;font-size:.85rem">&copy; <span id="yr"></span> Rohit Kumar. All rights reserved.</p>
+</div></footer>
+
+<div class="float" id="float"></div>
+<button class="iconbtn" id="top" aria-label="Back to top"><svg class="ic"><use href="#up"/></svg></button>
+
+<script>
+const CONFIG = {
+  email: "",
+  github: "https://github.com/Rohitkumar9354-byte?tab=repositories",
+  linkedin: "https://www.linkedin.com/feed/",
+  leetcode: "https://leetcode.com/u/Rohit_9354/",
+  resume: "Rohit_Kumar_Resume.pdf",
+  photo: "profile.jpg",
+  formEndpoint: "",
+  intro: "B.Tech CSIT student who enjoys building web applications and solving problems with code. Looking for internship and placement opportunities in software development.",
+  about: "I am a B.Tech student in Computer Science and Information Technology at GL Bajaj Institute of Technology and Management. I enjoy learning new technologies, building practical projects and improving my problem-solving skills.",
+  objective: "Career goal: to grow into a skilled software developer who writes clean, reliable code and learns from real-world teams.",
+  strengths: ["Problem-solving", "Teamwork", "Adaptability"],
+  interests: ["Software development", "Data structures & algorithms", "Web development"],
+  stats: [],
+  skills: {
+    "Programming": ["c programing", "Python", "DSA in c++"],
+    "Frontend": ["HTML", "CSS", "JavaScript", "React"],
+    "Backend": ["Node.js", "Express.js"],
+    "Database": ["MySQL"],
+    "Tools": ["Git", "GitHub", "VS Code"],
+    "Core CS": ["DSA", "OOP", "DBMS", "Operating Systems", "Computer Networks"]
+  },
+  projects: [
+    {title:"Online Bookstore", desc:"Web app for browsing and ordering books.", problem:"Users needed a simple way to discover books and place orders online.", solution:"Built a responsive bookstore interface with product listing, search and order flow.", tech:["HTML","CSS","JavaScript"], features:["Book search","Category filtering","Order summary"], github:"", demo:""},
+    {title:"Web-Based Attendance System", desc:"Tracks student attendance through a web interface.", problem:"Manual attendance records can be slow and difficult to manage.", solution:"Created a web-based system for recording and viewing attendance digitally.", tech:["HTML","CSS","JavaScript"], features:["Student records","Attendance marking","Simple dashboard"], github:"", demo:""},
+    {title:"Inventory Management System", desc:"Manages stock records, additions and updates.", problem:"Small inventory records need a clear way to track stock changes.", solution:"Developed an interface to add, update and view inventory entries.", tech:["HTML","CSS","JavaScript"], features:["Add items","Update stock","Inventory view"], github:"", demo:""},
+    {title:"Personal Portfolio Website", desc:"This responsive portfolio site.", problem:"Present projects and skills to recruiters in one place.", solution:"A fast, accessible, config-driven static site.", tech:["HTML","CSS","JavaScript"], features:["Light/dark theme","Responsive layout","Accessible navigation"], github:"", demo:""}
+  ],
+  experience: [],
+  education: [
+    {degree:"B.Tech in Computer Science and Information Technology", school:"GL Bajaj Institute of Technology and Management", year:"2029", cgpa:"[CGPA]", courses:["Data Structures","DBMS","Operating Systems","Computer Networks"]}
+  ],
+  achievements: [
+    {
+      type:"Certification",
+      title:"Certificate 1",
+      detail:"IBM SkillsBuild, issuing on : Aug 18.2026, issued by : IBM SkillsBuild",
+      image:"certificate1.jpg",
+      link:"https://www.credly.com/badges/eac107d8-9a79-45c0-abbe-e3f5f8fc223a"
+    },
+    {
+      type:"Certification",
+      title:"Certificate 2",
+      detail:"Developing Static Web Page, issuing on : Aug 19.2026",
+      image:"certificate2.jpg",
+      link:"https://voisfortech.com/certificate-verification/VFLMS26_168577/272"
+    },
+    {
+      type:"Certification",
+      title:"Certificate 3",
+      detail:"Edunet,issuing on : Aug 22.2026",
+      image:"certificate3.jpg",
+      link:""
+    },
+    {
+      type:"Certification",
+      title:"Certificate 4",
+      detail:"Edunet Lab,issuing on : Aug 22.2026",
+      image:"certificate4.jpg",
+      link:""
+    }
+  ]
+};
+
+const $=s=>document.querySelector(s), esc=t=>String(t).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const icon=n=>`<svg class="ic"><use href="#${n}"/></svg>`;
+const C=CONFIG, mail=C.email?"mailto:"+C.email:"";
+const sections=[["home","Home"],["about","About"],["skills","Skills"],["projects","Projects"],["experience","Experience"],["education","Education"],["achievements","Achievements"],["contact","Contact"]];
+$("#links").innerHTML=sections.map(([id,n])=>`<li><a href="#${id}">${n}</a></li>`).join("");
+$("#footLinks").innerHTML=sections.map(([id,n])=>`<li><a href="#${id}">${n}</a></li>`).join("");
+$("#yr").textContent=new Date().getFullYear();
+
+$("#heroIntro").textContent=C.intro; $("#aboutText").textContent=C.about; $("#objective").textContent=C.objective;
+$("#strengths").innerHTML=C.strengths.map(s=>`<span class="chip">${esc(s)}</span>`).join("");
+$("#interests").innerHTML=C.interests.map(s=>`<span class="chip">${esc(s)}</span>`).join("");
+
+if(C.photo){
+  $("#photo").innerHTML=`<img src="${esc(C.photo)}" alt="Rohit Kumar" loading="lazy" onerror="this.parentNode.innerHTML='<span class=initials>RK</span>'">`;
+}
+
+const socials=[["gh","GitHub",C.github],["in","LinkedIn",C.linkedin],["ml","Email",mail]].filter(x=>x[2]);
+const socHTML=socials.map(([i,n,u])=>`<a class="iconbtn" href="${esc(u)}" aria-label="${n}" ${u.startsWith("http")?'target="_blank" rel="noopener noreferrer"':''}>${icon(i)}</a>`).join("");
+$("#heroSocial").innerHTML=socHTML||`<span class="note ph">Add your GitHub, LinkedIn and email in CONFIG to show social icons.</span>`;
+$("#footSocial").innerHTML=socHTML;
+$("#float").innerHTML=socHTML;
+$("#contactLinks").innerHTML=socials.map(([i,n,u])=>`<a class="btn" href="${esc(u)}" ${u.startsWith("http")?'target="_blank" rel="noopener noreferrer"':''}>${icon(i)}${n}</a>`).join("")||`<span class="empty">Contact links will appear once you add them in CONFIG.</span>`;
+
+$("#stats").innerHTML=C.stats.map(s=>`<div class="glass" style="text-align:center"><div class="count" data-v="${+s.value}" style="font:800 2.2rem Sora">0</div><div style="color:var(--mute)">${esc(s.label)}</div></div>`).join("");
+
+$("#skillGrid").innerHTML=Object.entries(C.skills).map(([g,a])=>`<div class="glass hover reveal"><h3>${esc(g)}</h3><div class="chips">${a.map(s=>`<span class="chip">${esc(s)}</span>`).join("")}</div></div>`).join("");
+
+const hues=[["#8b5cf6","#3b82f6"],["#6366f1","#06b6d4"],["#a855f7","#ec4899"],["#3b82f6","#8b5cf6"]];
+const linkBtn=(u,label)=>u?`<a class="btn sm" href="${esc(u)}" target="_blank" rel="noopener noreferrer">${label}</a>`:`<span class="btn sm" aria-disabled="true">${label} (add link)</span>`;
+$("#projGrid").innerHTML=C.projects.map((p,i)=>`<article class="glass card hover reveal">
+ <div class="thumb" style="background:linear-gradient(135deg,${hues[i%4][0]},${hues[i%4][1]})" role="img" aria-label="Preview for ${esc(p.title)}">${esc(p.title[0])}</div>
+ <h3>${esc(p.title)}</h3><p>${esc(p.desc)}</p>
+ <div class="chips" style="margin:0 0 14px">${p.tech.map(t=>`<span class="chip">${esc(t)}</span>`).join("")}</div>
+ <div class="row" style="margin:0"><button class="btn pri sm" data-p="${i}">View Details</button>${linkBtn(p.github,"GitHub")}${linkBtn(p.demo,"Live Demo")}</div></article>`).join("");
+const dlg=$("#dlg");
+$("#projGrid").addEventListener("click",e=>{const b=e.target.closest("[data-p]");if(!b)return;const p=C.projects[b.dataset.p];
+ $("#dBody").innerHTML=`<h3 id="dTitle">${esc(p.title)}</h3><p style="color:var(--mute)">${esc(p.desc)}</p><h4>Problem</h4><p>${esc(p.problem)}</p><h4>Solution</h4><p>${esc(p.solution)}</p><h4>Key features</h4><ul>${p.features.map(f=>`<li>${esc(f)}</li>`).join("")}</ul><h4>Technologies</h4><div class="chips">${p.tech.map(t=>`<span class="chip">${esc(t)}</span>`).join("")}</div><div class="row">${linkBtn(p.github,"GitHub")}${linkBtn(p.demo,"Live Demo")}</div>`;
+ dlg.showModal();});
+$("#dClose").onclick=()=>dlg.close();
+dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+
+$("#expList").innerHTML=C.experience.length?`<div class="tl">`+C.experience.map(x=>`<div class="item glass"><h3>${esc(x.role)}</h3><p style="color:var(--b)">${esc(x.org)} &middot; ${esc(x.duration)}</p><ul style="padding-left:20px;color:var(--mute)">${(x.duties||[]).map(d=>`<li>${esc(d)}</li>`).join("")}</ul>${x.learned?`<div class="chips">${x.learned.map(s=>`<span class="chip">${esc(s)}</span>`).join("")}</div>`:""}</div>`).join("")+`</div>`
+ :`<div class="empty"><h3>No experience added yet</h3><p>Internships and work experience will appear here.</p></div>`;
+
+$("#eduList").innerHTML=C.education.map(e=>`<div class="item glass reveal"><h3>${esc(e.degree)}</h3><p style="color:var(--b)">${esc(e.school)}</p><p style="color:var(--mute)">Graduation: <span class="ph">${esc(e.year)}</span> &nbsp;|&nbsp; CGPA: <span class="ph">${esc(e.cgpa)}</span></p><div class="chips">${e.courses.map(c=>`<span class="chip">${esc(c)}</span>`).join("")}</div></div>`).join("");
+
+$("#achGrid").innerHTML=C.achievements.length?C.achievements.map(a=>`
+  <article class="glass hover reveal">
+    ${a.image?`<img class="cert-img" src="${esc(a.image)}" alt="Certificate: ${esc(a.title)}" loading="lazy" onerror="this.style.display='none'">`:""}
+    <span class="chip">${esc(a.type)}</span>
+    <h3 style="margin:10px 0 4px">${esc(a.title)}</h3>
+    <p style="color:var(--mute)">${esc(a.detail||"")}</p>
+    ${a.link?`<a class="cert-link" href="${esc(a.link)}" target="_blank" rel="noopener noreferrer">View Certificate →</a>`:""}
+  </article>`).join("")
+ :`<div class="empty" style="grid-column:1/-1"><h3>No certifications or achievements added yet</h3><p>Add real entries to <code>achievements</code> in CONFIG.</p></div>`;
+
+$("#profGrid").innerHTML=[["gh","GitHub","Repositories and contributions",C.github],["code","LeetCode","Problem-solving profile",C.leetcode],["in","LinkedIn","Professional profile",C.linkedin]].map(([i,n,d,u])=>`<div class="glass hover reveal">${icon(i)}<h3 style="margin:10px 0 4px">${n}</h3><p style="color:var(--mute);margin-bottom:14px">${d}</p>${u?`<a class="btn sm" href="${esc(u)}" target="_blank" rel="noopener noreferrer">Open ${n}</a>`:`<span class="btn sm" aria-disabled="true">Add URL in CONFIG</span>`}</div>`).join("");
+
+["#navResume","#heroResume","#resDl"].forEach(s=>$(s).setAttribute("href",C.resume));
+$("#resNote").textContent=`Place your PDF as "${C.resume}" next to index.html.`;
+$("#resPrev").onclick=()=>{const b=$("#resBox");if(b.firstChild){b.innerHTML="";return}
+ b.innerHTML=`<iframe src="${esc(C.resume)}" title="Resume preview"></iframe>`;};
+
+const root=document.documentElement;
+function setTheme(t){root.dataset.theme=t;$("#theme").innerHTML=icon(t==="dark"?"sun":"moon");$("#theme").setAttribute("aria-pressed",t==="light");try{localStorage.setItem("theme",t)}catch(e){}}
+let saved=null;try{saved=localStorage.getItem("theme")}catch(e){}
+setTheme(saved||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"));
+$("#theme").onclick=()=>setTheme(root.dataset.theme==="dark"?"light":"dark");
+
+const burger=$("#burger"),links=$("#links");
+burger.onclick=()=>{const o=links.classList.toggle("open");burger.setAttribute("aria-expanded",o)};
+links.addEventListener("click",e=>{if(e.target.tagName==="A"){links.classList.remove("open");burger.setAttribute("aria-expanded","false")}});
+addEventListener("keydown",e=>{if(e.key==="Escape"){links.classList.remove("open");burger.setAttribute("aria-expanded","false")}});
+
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const phrases=["CSIT Student","Aspiring Software Developer","Problem Solver"];
+if(reduce){$("#typed").textContent=phrases.join(" | ")}else{let pi=0,ci=0,del=false;(function tick(){const w=phrases[pi];ci+=del?-1:1;$("#typed").textContent=w.slice(0,ci);
+ let d=del?40:85;if(!del&&ci===w.length){del=true;d=1400}else if(del&&ci===0){del=false;pi=(pi+1)%phrases.length;d=300}setTimeout(tick,d)})()}
+
+const secEls=sections.map(([id])=>document.getElementById(id));
+function onScroll(){const h=document.documentElement,max=h.scrollHeight-innerHeight;$("#prog").style.width=(max>0?scrollY/max*100:0)+"%";
+ $("#top").classList.toggle("show",scrollY>600);let cur="home";secEls.forEach(s=>{if(s.getBoundingClientRect().top<140)cur=s.id});
+ document.querySelectorAll(".links a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+cur))}
+addEventListener("scroll",onScroll,{passive:true});onScroll();
+$("#top").onclick=()=>scrollTo({top:0,behavior:reduce?"auto":"smooth"});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,v=+el.dataset.v;cio.unobserve(el);
+ if(reduce){el.textContent=v;return}let n=0;const step=Math.max(1,Math.ceil(v/50));const t=setInterval(()=>{n=Math.min(v,n+step);el.textContent=n;if(n>=v)clearInterval(t)},25)}));
+document.querySelectorAll(".count").forEach(el=>cio.observe(el));
+
+(function(){if(reduce)return;const c=$("#bg"),x=c.getContext("2d");let w,h,P=[];
+ function size(){w=c.width=innerWidth;h=c.height=innerHeight;P=Array.from({length:Math.min(60,Math.floor(w/22))},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35}))}
+ size();addEventListener("resize",size);
+ (function draw(){x.clearRect(0,0,w,h);const col=root.dataset.theme==="dark"?"167,139,250":"109,63,224";
+  P.forEach((p,i)=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1;x.fillStyle=`rgba(${col},.7)`;x.beginPath();x.arc(p.x,p.y,1.8,0,6.3);x.fill();
+   for(let j=i+1;j<P.length;j++){const q=P[j],d=Math.hypot(p.x-q.x,p.y-q.y);if(d<120){x.strokeStyle=`rgba(${col},${.18*(1-d/120)})`;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}}});
+  if(!document.hidden)requestAnimationFrame(draw);else setTimeout(()=>requestAnimationFrame(draw),500)})()})();
+
+const F={fn:"Enter your name.",fe:"Enter a valid email address.",fs:"Enter a subject.",fm:"Write a message of at least 10 characters."};
+function check(id){const el=$("#"+id),v=el.value.trim();let ok=v.length>0;if(id==="fe")ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);if(id==="fm")ok=v.length>=10;
+ el.setAttribute("aria-invalid",!ok);el.parentNode.querySelector(".err").textContent=ok?"":F[id];return ok}
+Object.keys(F).forEach(id=>$("#"+id).addEventListener("blur",()=>check(id)));
+$("#form").addEventListener("submit",async e=>{e.preventDefault();const st=$("#status");st.className="";
+ if(!Object.keys(F).map(check).every(Boolean)){st.className="bad";st.textContent="Please fix the highlighted fields and try again.";return}
+ const d={name:$("#fn").value.trim(),email:$("#fe").value.trim(),subject:$("#fs").value.trim(),message:$("#fm").value.trim()};
+ if(C.formEndpoint){try{const r=await fetch(C.formEndpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(d)});
+  if(!r.ok)throw 0;st.className="ok";st.textContent="Message sent. Thank you, I will reply soon.";e.target.reset()}catch(_){st.className="bad";st.textContent="The message could not be sent. Check your connection and try again."}return}
+ if(C.email){location.href=`mailto:${C.email}?subject=${encodeURIComponent(d.subject)}&body=${encodeURIComponent(d.message+"\n\nFrom: "+d.name+" ("+d.email+")")}`;st.className="ok";st.textContent="Your email app should open with the message ready to send."}
+ else{st.className="bad";st.textContent="Sending is not set up yet. Add email or formEndpoint in CONFIG."}});
+
+addEventListener("load",()=>{const l=$("#loader");l.style.opacity=0;setTimeout(()=>l.remove(),500)});
+</script>
+</body>
+</html>
